@@ -42,7 +42,7 @@ namespace HumbleBundleServerless
 
             message.embeds.Add(new DiscordEmbed()
             {
-                url = bundle.URL,
+                url = bundle.URL + "?partner=havenbreaker&charity=151160",
                 title = bundle.Description,
                 image = new ImageField()
                 {
@@ -51,7 +51,7 @@ namespace HumbleBundleServerless
                 author = new AuthorField()
                 {
                     name = "Humble Bundle",
-                    url = bundle.URL
+                    url = bundle.URL + "?partner=havenbreaker&charity=151160"
                 }
             });
 
@@ -60,7 +60,7 @@ namespace HumbleBundleServerless
                 var embed = new DiscordEmbed
                 {
                     title = section.Title,
-                    url = bundle.URL,
+                    url = bundle.URL + "?partner=havenbreaker&charity=151160",
                     description = ""
                 };
 
@@ -76,7 +76,7 @@ namespace HumbleBundleServerless
                     var embedContinued = new DiscordEmbed
                     {
                         title = section.Title,
-                        url = bundle.URL,
+                        url = bundle.URL + "?partner=havenbreaker&charity=151160",
                         description = ""
                     };
 
