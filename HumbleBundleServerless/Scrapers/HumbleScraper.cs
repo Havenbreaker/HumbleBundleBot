@@ -78,7 +78,7 @@ namespace HumbleBundleBot
                     // Do nothing
                 }
             }
-            
+
         }
 
         private static string GetOgPropertyValue(HtmlNode response, string property)
@@ -123,7 +123,7 @@ namespace HumbleBundleBot
             {
                 return BundleTypes.MOBILE;
             }
-            if (url.Contains("books"))
+            if (url.Contains("books")) || (url.Contains("comics"))
             {
                 return BundleTypes.BOOKS;
             }
@@ -217,6 +217,6 @@ namespace HumbleBundleBot
                     ScrapePage(nextPage);
                 }
             }
-        }  
+        }
     }
 }
